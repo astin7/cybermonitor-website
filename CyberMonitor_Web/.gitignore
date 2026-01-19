@@ -1,0 +1,17 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+venv/
+.venv/
+__pycache__/
+*.pyc
+build/
+license_tracker.json
+keygen.py
+*.spec
+.DS_Store
+.vscode/
+.idea/
