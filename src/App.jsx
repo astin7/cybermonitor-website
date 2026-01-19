@@ -75,13 +75,29 @@ const Home = () => (
     <Hero />
     <section className="py-24 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Engineered for Performance</h2>
           <div className="w-20 h-1.5 bg-cyber-blue mx-auto rounded-full mb-6 shadow-glow"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg mb-12">
             Everything you need to monitor, secure, and optimize your machine in one lightweight package.
           </p>
+          
+          {/* --- NEW IMAGE SECTION START --- */}
+          <div className="relative max-w-5xl mx-auto mb-20 group">
+            {/* Background Glow behind the image */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyber-blue/20 to-transparent blur-2xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+            
+            <div className="relative bg-[#1a1a1a] rounded-2xl border border-white/10 p-2 shadow-2xl">
+               <img 
+                src={`${import.meta.env.BASE_URL}cybermonitor-dashboard.png`}
+                alt="CyberMonitor Dashboard Display" 
+                className="rounded-xl w-full h-auto shadow-[0_0_50px_rgba(0,168,255,0.1)]"
+              />
+            </div>
+          </div>
+          {/* --- NEW IMAGE SECTION END --- */}
         </div>
+
         <div className="grid md:grid-cols-3 gap-8">
           <FeatureCard icon={Activity} title="Real-Time Analytics" desc="Monitor CPU, GPU, and RAM usage with millisecond precision using our low-latency engine." />
           <FeatureCard icon={Shield} title="Hardware Locked" desc="Advanced HWID security ensures your license is permanently tied to your specific motherboard." />
